@@ -1,0 +1,63 @@
+{
+  "name": "emails-help",
+  "version": "0.1.0",
+  "description": "Resolve IMAP and SMTP settings for any email address or domain — and find out how certain the answer actually is. Zero runtime dependencies.",
+  "keywords": [
+    "email",
+    "imap",
+    "smtp",
+    "pop3",
+    "autoconfig",
+    "autodiscover",
+    "ispdb",
+    "thunderbird",
+    "mail-settings",
+    "email-settings",
+    "mx"
+  ],
+  "author": "emails.help (https://emails.help)",
+  "homepage": "https://emails.help",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/404notpentested/emails-help-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/404notpentested/emails-help-js/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "emails-help": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm run sync && npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

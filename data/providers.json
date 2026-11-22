@@ -1,0 +1,1323 @@
+{
+  "version": 1,
+  "generated_at": "2026-11-22T20:43:45+00:00",
+  "source": "https://emails.help",
+  "about": "Email server settings, each value taken from the provider's own documentation. A null with a note in \"undocumented\" means the provider does not state that value, not that it is unknown.",
+  "licence": "CC BY 4.0",
+  "count": 31,
+  "providers": [
+    {
+      "slug": "aol",
+      "name": "AOL Mail",
+      "domains": [
+        "aol.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.aol.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.aol.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.aol.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "An app password from your AOL Account Security page — unless your app signs in through AOL’s own sign-in page.",
+      "notes": [
+        "IMAP keeps the app and mail.aol.com in sync; POP only downloads the Inbox."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.aol.com/articles/how-do-i-use-other-email-applications-to-send-and-receive-my-aol-mail"
+      ],
+      "guide": "https://emails.help/aol-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "att",
+      "name": "AT&T Mail",
+      "domains": [
+        "att.net",
+        "sbcglobal.net",
+        "bellsouth.net",
+        "pacbell.net",
+        "prodigy.net",
+        "ameritech.net",
+        "currently.com",
+        "flash.net",
+        "nvbell.net",
+        "snet.net",
+        "swbell.net",
+        "wans.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.mail.att.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "inbound.att.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.mail.att.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "A secure mail key (16 characters, created in your AT&T profile) — unless your app signs in with OAuth, where your AT&T password works.",
+      "notes": [
+        "AT&T also lists port 587 for the IMAP outgoing server.",
+        "With POP3, the outgoing server is outbound.att.net on port 465 with SSL."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.att.com/support/article/email-support/KM1010523/",
+        "https://www.att.com/support/article/email-support/KM1240308/"
+      ],
+      "guide": "https://emails.help/att-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "centurylink",
+      "name": "CenturyLink Email",
+      "domains": [
+        "centurylink.net",
+        "centurytel.net",
+        "clds.net",
+        "coastalnow.net",
+        "cochill.net",
+        "cswnet.com",
+        "elpasotel.net",
+        "embarqmail.com",
+        "emadisonriver.com",
+        "emadisonriver.net",
+        "gallatinriver.net",
+        "grics.net",
+        "gulftel.com",
+        "madisonriver.biz",
+        "mebtel.net",
+        "qwest.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "mail.centurylink.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.centurylink.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.centurylink.net",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "CenturyLink moved all email to a new service in October 2022 — apps set up before then may need these updated settings.",
+        "qwestoffice.net uses different servers (pop.qwestoffice.net and smtp.qwestoffice.net)."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.centurylink.com/home/help/internet/email/how-to-set-up-your-email-server-settings-to-go-through-pop-and-smtp.html"
+      ],
+      "guide": "https://emails.help/centurylink/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "cox",
+      "name": "Cox Email (Yahoo)",
+      "domains": [
+        "cox.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.mail.yahoo.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.mail.yahoo.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.mail.yahoo.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": null
+          }
+        }
+      },
+      "username": "Your full cox.net email address",
+      "authentication": "A Yahoo app password — your regular password won’t work in email apps.",
+      "notes": [
+        "Cox moved all cox.net email to Yahoo Mail; Yahoo now handles cox.net email support."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.yahoo.com/kb/mail/SLN36637.html",
+        "https://www.cox.com/residential/support/coxnet-email-transitioning-to-yahoo.html"
+      ],
+      "guide": "https://emails.help/cox-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "earthlink",
+      "name": "EarthLink",
+      "domains": [
+        "earthlink.net",
+        "mindspring.com",
+        "peoplepc.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.earthlink.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.earthlink.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtpauth.earthlink.net",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "For POP, other EarthLink domains use pop. plus the domain — for example pop.mindspring.com or pop.peoplepc.com.",
+        "If you use more than one device, put them all on IMAP; EarthLink warns that mixing POP and IMAP can stop messages saving."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.earthlink.net/portal/en/kb/articles/email-server-settings"
+      ],
+      "guide": "https://emails.help/earthlink/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "fastmail",
+      "name": "Fastmail",
+      "domains": [
+        "fastmail.com"
+      ],
+      "mx_patterns": [
+        "messagingengine.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.fastmail.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.fastmail.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.fastmail.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": "starttls"
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "An app password — Fastmail doesn’t accept your regular password in email apps.",
+      "notes": [
+        "Don’t turn on Secure Password Authentication (SPA) — it isn’t needed with SSL/TLS and won’t work.",
+        "If your network blocks these ports, Fastmail offers proxy servers (imaps-proxy, pops-proxy, smtps-proxy.fastmail.com)."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://fastmail.help/hc/en-us/articles/1500000278342"
+      ],
+      "guide": "https://emails.help/fastmail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "frontier",
+      "name": "Frontier Mail",
+      "domains": [
+        "frontier.com",
+        "frontiernet.net",
+        "citilink.net",
+        "epix.net",
+        "gvni.com",
+        "newnorth.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "pop3": {
+          "host": "pop3.frontier.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.frontier.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Your Frontier email password. The outgoing server requires authentication.",
+      "notes": [
+        "Frontier Mail is powered by Yahoo. Frontier says to use an OAuth-compliant email app; on iPhone it adds Frontier email as a Yahoo account.",
+        "Frontier’s settings page lists POP3 and SMTP only — no IMAP server."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://frontier.com/helpcenter/categories/internet/email/troubleshooting-email/get-started/mail-server-settings",
+        "https://frontier.com/helpcenter/residential/categories/internet/email/use-frontier-yahoo-mail"
+      ],
+      "guide": "https://emails.help/frontier-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "gmail",
+      "name": "Gmail",
+      "domains": [
+        "gmail.com"
+      ],
+      "mx_patterns": [
+        "google.com",
+        "googlemail.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.gmail.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.gmail.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.gmail.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Use your app’s “Sign in with Google” option where available. If you use 2-Step Verification and your app can’t sign in with Google, Google suggests an app password.",
+      "notes": [
+        "IMAP is always on for personal Gmail accounts.",
+        "POP has to be turned on first in Gmail settings under Forwarding and POP/IMAP.",
+        "Work or school accounts: check with your administrator for the correct SMTP configuration."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.google.com/mail/answer/7104828",
+        "https://support.google.com/mail/answer/7126229"
+      ],
+      "guide": "https://emails.help/gmail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "gmx",
+      "name": "GMX",
+      "domains": [
+        "gmx.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.gmx.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.gmx.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mail.gmx.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true,
+          "alternative": {
+            "port": 465,
+            "security": "ssl"
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "POP3 and IMAP are switched off by default. Turn them on in your GMX email settings first.",
+        "Your app must support TLS 1.2 or 1.3 — older TLS versions are no longer accepted."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.gmx.com/pop-imap/setup-emailprogram-fails.html"
+      ],
+      "guide": "https://emails.help/gmx/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "gmx-net",
+      "name": "GMX (gmx.net)",
+      "domains": [
+        "gmx.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.gmx.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mail.gmx.net",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true,
+          "alternative": {
+            "port": 465,
+            "security": "ssl"
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "POP3 or IMAP has to be switched on in your GMX settings before you can use them.",
+        "Your app must support TLS 1.2 or 1.3."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://hilfe.gmx.net/pop-imap/imap/imap-serverdaten.html"
+      ],
+      "guide": null,
+      "verified": null
+    },
+    {
+      "slug": "godaddy",
+      "name": "GoDaddy Professional Email",
+      "domains": [],
+      "mx_patterns": [
+        "secureserver.net"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.secureserver.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtpout.secureserver.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Your email password — not your GoDaddy account password.",
+      "notes": [
+        "Microsoft 365 from GoDaddy uses Microsoft’s servers instead; GoDaddy recommends Exchange settings or Outlook on the web for it.",
+        "Older Workspace Email accounts use the same IMAP and SMTP servers. GoDaddy is retiring Workspace Email."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.godaddy.com/en-ca/help/use-imap-settings-to-add-my-professional-email-to-a-client-32204",
+        "https://www.godaddy.com/en-in/help/what-are-my-dns-settings-for-professional-email-powered-by-titan-42767"
+      ],
+      "guide": "https://emails.help/godaddy-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "icloud",
+      "name": "iCloud Mail",
+      "domains": [
+        "icloud.com"
+      ],
+      "mx_patterns": [
+        "mail.icloud.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.mail.me.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.mail.me.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "IMAP: usually the part of your address before the @ (try the full address if that fails). SMTP: your full iCloud address.",
+      "authentication": "An app-specific password, generated from your Apple Account — not your normal Apple password.",
+      "notes": [
+        "iCloud Mail doesn’t support POP.",
+        "On Apple devices that meet iCloud’s requirements, use the built-in iCloud settings instead."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.apple.com/en-us/102525"
+      ],
+      "guide": "https://emails.help/icloud-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "juno",
+      "name": "Juno",
+      "domains": [
+        "juno.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "pop3": {
+          "host": "pop.juno.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.juno.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address (memberid@juno.com)",
+      "authentication": null,
+      "notes": [
+        "Juno publishes no IMAP server — POP3 only. Set “Delete email from server” to Never so a second device and webmail can still see your mail.",
+        "Outgoing mail needs authentication: tick Require Sign-in on the SMTP server.",
+        "Juno’s help pages have not been revised in years — its setup page still lists Outlook Express. Re-check these values against Juno before relying on them."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.juno.com/support/webmail/wm-email-setup.html",
+        "https://help.juno.com/support/webmail/mobile/droid.html"
+      ],
+      "guide": "https://emails.help/juno/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "mail-com",
+      "name": "mail.com",
+      "domains": [
+        "mail.com"
+      ],
+      "mx_patterns": [
+        "mail.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.mail.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.mail.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.mail.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true,
+          "alternative": {
+            "port": 465,
+            "security": "ssl"
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "POP3, IMAP and SMTP are mail.com Premium features only — free accounts use the website or the mail.com Mail app.",
+        "Access is switched off by default: Email › Settings › POP3 & IMAP › “Enable access to this account via POP3 and IMAP”. mail.com turns it off again after long non-use.",
+        "With two-factor authentication on, use an application-specific password in the app."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.mail.com/pop-imap/toggle.html",
+        "https://support.mail.com/pop-imap/setup-emailprogram-fails.html"
+      ],
+      "guide": "https://emails.help/mail-com/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "microsoft-365",
+      "name": "Microsoft 365",
+      "domains": [],
+      "mx_patterns": [
+        "mail.protection.outlook.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "outlook.office365.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "outlook.office365.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.office365.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Your work or school account password. Turn on “My outgoing server requires authentication” and leave Secure Password Authentication off.",
+      "notes": [
+        "Your organisation’s administrator can turn POP, IMAP or SMTP off for your mailbox. If these settings don’t work, ask them first.",
+        "Accounts operated by 21Vianet (China) use different servers."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.microsoft.com/en-us/topic/775748a1-0075-40fd-b630-1d2a84be081a"
+      ],
+      "guide": "https://emails.help/microsoft-365/smtp-settings",
+      "verified": null
+    },
+    {
+      "slug": "netzero",
+      "name": "NetZero",
+      "domains": [
+        "netzero.com",
+        "netzero.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "pop3": {
+          "host": "pop.netzero.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.netzero.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your NetZero Member ID",
+      "authentication": null,
+      "notes": [
+        "NetZero publishes no IMAP server — POP3 only. Set “Delete email from server” to Never so a second device and webmail can still see your mail.",
+        "Webmail is on netzero.net; addresses and mail servers are on netzero.com. A hostname that looks almost right is usually this.",
+        "Outgoing mail needs authentication: tick Require Sign-in on the SMTP server."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.netzero.net/support/webmail/wm-email-setup.html",
+        "https://help.netzero.net/support/webmail/mobile/droid.html"
+      ],
+      "guide": "https://emails.help/netzero/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "optimum",
+      "name": "Optimum Email",
+      "domains": [
+        "optimum.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "mail.optimum.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "mail.optimum.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mail.optimum.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "The password for your email address. Turn on “My outgoing server requires authentication”.",
+      "notes": [
+        "Optimum recommends IMAP if you read email on more than one device."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.optimum.net/FAQ/#/answers/a_id/216"
+      ],
+      "guide": "https://emails.help/optimum-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "outlook",
+      "name": "Outlook.com",
+      "domains": [
+        "outlook.com",
+        "hotmail.com",
+        "live.com"
+      ],
+      "mx_patterns": [
+        "olc.protection.outlook.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "outlook.office365.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "outlook.office365.com",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp-mail.outlook.com",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Your Microsoft account password. Outlook.com requires an app that supports Modern Auth (OAuth2).",
+      "notes": [
+        "POP and IMAP access are off by default. Turn them on in Outlook.com under Settings › Mail › Forwarding and IMAP."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://support.microsoft.com/en-us/outlook/pop-imap-and-smtp-settings-for-outlook-com"
+      ],
+      "guide": "https://emails.help/outlook/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "proton",
+      "name": "Proton Mail",
+      "domains": [
+        "proton.me",
+        "protonmail.com"
+      ],
+      "mx_patterns": [
+        "protonmail.ch"
+      ],
+      "client_access": false,
+      "notes": [],
+      "undocumented": [],
+      "sources": [
+        "https://proton.me/support/imap-smtp-and-pop3-setup"
+      ],
+      "guide": "https://emails.help/proton-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "spectrum-brighthouse",
+      "name": "Spectrum Email (Bright House)",
+      "domains": [
+        "brighthouse.com",
+        "bak.rr.com",
+        "bham.rr.com",
+        "cfl.rr.com",
+        "emore.rr.com",
+        "eufala.rr.com",
+        "indy.rr.com",
+        "mi.rr.com",
+        "panhandle.rr.com",
+        "tampabay.rr.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "mail.brighthouse.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mail.brighthouse.com",
+          "port": 587,
+          "security": null,
+          "security_documented": true
+        }
+      },
+      "username": "Your full Spectrum-provided email address",
+      "authentication": "Your Spectrum email password. Outgoing mail requires authentication.",
+      "notes": [
+        "Spectrum lists IMAP with SSL on, incoming port 993 and outgoing port 587."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.spectrum.net/support/internet/mobile-email-setup"
+      ],
+      "guide": "https://emails.help/spectrum-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "spectrum-charter",
+      "name": "Spectrum Email (Charter)",
+      "domains": [
+        "spectrum.net",
+        "charter.net",
+        "bresnan.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "mobile.charter.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mobile.charter.net",
+          "port": 587,
+          "security": null,
+          "security_documented": true
+        }
+      },
+      "username": "Your full Spectrum-provided email address",
+      "authentication": "Your Spectrum email password. Outgoing mail requires authentication.",
+      "notes": [
+        "Spectrum lists IMAP with SSL on, incoming port 993 and outgoing port 587."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.spectrum.net/support/internet/mobile-email-setup"
+      ],
+      "guide": "https://emails.help/spectrum-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "spectrum-twc",
+      "name": "Spectrum Email (Roadrunner / TWC)",
+      "domains": [
+        "twc.com",
+        "roadrunner.com",
+        "*.rr.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "mail.twc.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "mail.twc.com",
+          "port": 587,
+          "security": null,
+          "security_documented": true
+        }
+      },
+      "username": "Your full Spectrum-provided email address",
+      "authentication": "Your Spectrum email password. Outgoing mail requires authentication.",
+      "notes": [
+        "Spectrum lists IMAP with SSL on, incoming port 993 and outgoing port 587.",
+        "Two-domain accounts (roadrunner.com / adelphia.net, mi.rr.com / twmi.rr.com, nycap.rr.com / berkshire.rr.com): sign in to email apps with the roadrunner.com, mi.rr.com or nycap.rr.com address."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.spectrum.net/support/internet/mobile-email-setup"
+      ],
+      "guide": "https://emails.help/spectrum-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "suddenlink",
+      "name": "Suddenlink Email (Optimum)",
+      "domains": [
+        "suddenlink.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.suddenlink.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.suddenlink.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.suddenlink.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "The password for your email address. Turn on “My outgoing server requires authentication”.",
+      "notes": [],
+      "undocumented": [],
+      "sources": [
+        "https://www.optimum.net/FAQ/#/answers/a_id/216"
+      ],
+      "guide": "https://emails.help/optimum-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "tuta",
+      "name": "Tuta Mail",
+      "domains": [
+        "tuta.com",
+        "tutanota.com",
+        "tutanota.de",
+        "tutamail.com",
+        "tuta.io",
+        "keemail.me"
+      ],
+      "mx_patterns": [],
+      "client_access": false,
+      "notes": [],
+      "undocumented": [],
+      "sources": [
+        "https://tuta.com/blog/beta-time-is-over-release-notes"
+      ],
+      "guide": "https://emails.help/tuta/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "verizon",
+      "name": "Verizon.net (AOL Mail)",
+      "domains": [
+        "verizon.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.aol.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop.verizon.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.verizon.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "username": "Your full address, including @verizon.net",
+      "authentication": "Use an app that supports OAuth2, or create an AOL app password.",
+      "notes": [
+        "Verizon retired its email service; verizon.net addresses that moved to AOL use these AOL-published settings.",
+        "If your verizon.net address moved to Yahoo instead, use Yahoo Mail’s settings."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://help.aol.com/articles/how-do-i-set-up-other-email-applications-to-send-and-receive-my-verizon-net-mail"
+      ],
+      "guide": "https://emails.help/verizon-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "web-de",
+      "name": "WEB.DE",
+      "domains": [
+        "web.de"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.web.de",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.web.de",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true,
+          "alternative": {
+            "port": 465,
+            "security": "ssl"
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "POP3 or IMAP has to be switched on in your WEB.DE settings before you can use them."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://hilfe.web.de/pop-imap/imap/imap-serverdaten.html"
+      ],
+      "guide": null,
+      "verified": null
+    },
+    {
+      "slug": "windstream",
+      "name": "Windstream (Kinetic) Email",
+      "domains": [
+        "windstream.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.windstream.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.windstream.net",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": null
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": null,
+      "notes": [
+        "Windstream recommends IMAP. If one device uses IMAP, set every device to IMAP to avoid “POP lock”.",
+        "Accounts with no Webmail, POP or IMAP activity for 180 days become inactive."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.gokinetic.com/support/my-account/email-101/what-server-settings-do-i-use-for-windstream-email",
+        "https://www.gokinetic.com/support/my-account/email-101/how-do-i-recover-or-reset-my-email-password"
+      ],
+      "guide": "https://emails.help/windstream-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "xfinity",
+      "name": "Xfinity Email (Comcast)",
+      "domains": [
+        "comcast.net"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.comcast.net",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        },
+        "pop3": {
+          "host": "pop3.comcast.net",
+          "port": 995,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.comcast.net",
+          "port": 587,
+          "security": "starttls",
+          "security_documented": true,
+          "alternative": {
+            "port": 465,
+            "security": "ssl"
+          }
+        }
+      },
+      "username": "Your full Comcast.net email address",
+      "authentication": "Your Xfinity ID password. Turn on third-party access first: Xfinity Email › Settings › Security › Third Party Access Security.",
+      "notes": [
+        "Port 25 isn’t supported for sending, and POP port 110 no longer works.",
+        "Xfinity recommends IMAP, so mail and folders stay in sync across devices."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.xfinity.com/support/articles/email-client-programs-with-xfinity-email",
+        "https://www.xfinity.com/support/articles/third-party-email-access"
+      ],
+      "guide": "https://emails.help/xfinity-email/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "yahoo",
+      "name": "Yahoo Mail",
+      "domains": [
+        "yahoo.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.mail.yahoo.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.mail.yahoo.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": null
+          }
+        }
+      },
+      "username": "Your full email address",
+      "authentication": "Yahoo asks you to generate an app password for third-party email apps.",
+      "notes": [],
+      "undocumented": [],
+      "sources": [
+        "https://help.yahoo.com/kb/SLN4075.html"
+      ],
+      "guide": "https://emails.help/yahoo-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "yandex",
+      "name": "Yandex Mail",
+      "domains": [
+        "yandex.com"
+      ],
+      "mx_patterns": [],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.yandex.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.yandex.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": null
+          }
+        }
+      },
+      "username": "The part of your address before the @",
+      "authentication": "An app password (type “Mail”) created in your Yandex ID. It’s shown only once.",
+      "notes": [
+        "Turn on mail-client access first: Mail settings › Email clients › “From the imap.yandex.com server via IMAP”, plus “App passwords and OAuth tokens”.",
+        "Yandex no longer updates POP3 support and doesn’t guarantee it works."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.yandex.com/support/mail/mail-clients/others.html"
+      ],
+      "guide": "https://emails.help/yandex-mail/server-settings",
+      "verified": null
+    },
+    {
+      "slug": "zoho",
+      "name": "Zoho Mail",
+      "domains": [
+        "zoho.com",
+        "zohomail.com"
+      ],
+      "mx_patterns": [
+        "zoho.com"
+      ],
+      "client_access": true,
+      "incoming": {
+        "imap": {
+          "host": "imap.zoho.com",
+          "port": 993,
+          "security": "ssl",
+          "security_documented": true
+        }
+      },
+      "outgoing": {
+        "smtp": {
+          "host": "smtp.zoho.com",
+          "port": 465,
+          "security": "ssl",
+          "security_documented": true,
+          "alternative": {
+            "port": 587,
+            "security": "starttls"
+          }
+        }
+      },
+      "username": "Your Zoho username or full Zoho Mail address",
+      "authentication": null,
+      "notes": [
+        "Turn on IMAP Access first: Settings › Mail Accounts › your address › IMAP.",
+        "Paid organisation accounts (you@yourdomain.com) use imappro.zoho.com and smtppro.zoho.com instead.",
+        "Your account’s Server Configuration Details shows the exact servers for your data centre — use those if they differ.",
+        "IMAP isn’t available to newly signed-up free-plan users."
+      ],
+      "undocumented": [],
+      "sources": [
+        "https://www.zoho.com/mail/help/imap-access.html"
+      ],
+      "guide": "https://emails.help/zoho-mail/server-settings",
+      "verified": null
+    }
+  ]
+}
