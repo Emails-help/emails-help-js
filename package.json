@@ -1,6 +1,6 @@
 {
   "name": "emails-help",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Resolve IMAP and SMTP settings for any email address or domain — and find out how certain the answer actually is. Zero runtime dependencies.",
   "keywords": [
     "email",
