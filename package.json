@@ -1,6 +1,6 @@
 {
   "name": "emails-help",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Resolve IMAP and SMTP settings for any email address or domain — and find out how certain the answer actually is. Zero runtime dependencies.",
   "keywords": [
     "email",
@@ -19,10 +19,10 @@
   "homepage": "https://emails.help",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/404notpentested/emails-help-js.git"
+    "url": "git+https://github.com/emails-help/emails-help-js.git"
   },
   "bugs": {
-    "url": "https://github.com/404notpentested/emails-help-js/issues"
+    "url": "https://github.com/emails-help/emails-help-js/issues"
   },
   "license": "MIT",
   "type": "module",
